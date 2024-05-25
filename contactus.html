@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/contactus.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Darling Donuts Logo">
+            </a>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="orders.html">Order Now</a>
+                <a class="active" href="contactus.html">Contact Us</a>
+                <a href="site-plan.html">Site Plan</a>
+                <div class="login-container">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button type="submit">Login</button>
+                  </form>
+                </div>
+              </div>
+        </header>
+        <body>
+        <div class="grid-container">
+        <div class="container-1">
+        <div id="feedback"></div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="mail" name="user_email" />
+            </div>
+            <div class="form-group">
+                <label for="msg">Notes:</label>
+                <textarea id="msg" name="user_message" class="input-textarea"></textarea></br>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send your message</button>
+            </div>
+        </ul>
+    </form>
+</div>
+<script>
+// get the feedback div element so we can do something with it.
+const feedbackElement = document.getElementById('feedback');
+// get the form so we can read what was entered in it.
+const formElement = document.forms[0];
+// add a 'listener' to wait for a submission of our form. When that happens run the code below.
+formElement.addEventListener('submit', function(e) {
+    // stop the form from doing the default action.
+    e.preventDefault();
+    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+    // make the feedback element visible.
+    feedbackElement.style.display = "block";
+    // add a class to move everything down so our message doesn't cover it.
+    document.body.classList.toggle('moveDown');
+});
+</script>
+            <div id="container-2">
+                <img id="img-1" src="images/Donuts3.jpg" alt="Donuts" class="girl">  
+                <img id="img-2" src="images/Donuts4.jpg" alt="Donuts 2" class="girl">
+            </div>
+        </div>
+        <footer class="bottomnav">
+            <p>Darling Donuts &copy; 20XX - Ashley Hillstead</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

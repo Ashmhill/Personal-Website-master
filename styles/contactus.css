@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+h1{
+    text-align: center;
+  }
+  header {
+      background-color: #fffbf2;
+      display: grid;
+      grid-template-columns: 150px auto;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #FFFBF2;
+    background-color: #e8b56b;
+    margin: 0;
+  }
+  .bottomnav {
+    background-color: #f8cb8a;
+    color:#fff;
+    font-family: Julius Sans One;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    grid-column: 1/3;
+    position: relative;
+  }
+  
+  /* mobile friendly alternative to using background-attachment: fixed */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  footer a {
+      color:#ffffff;
+      background-color:#f8cb8a;
+      text-decoration: none;
+      font-family: Rubik;
+  }
+  footer a:hover {
+      color: #f18aaf;
+      background-color: #e8b56b;
+      font-family: Rubik;
+  }
+  footer p {
+      font-size: 1.2em;
+      font-family: Rubik;
+  }
+  footer p a:hover {
+      text-decoration: underline;
+  }
+  .icon {
+      width: 80px;
+      padding-top: 10px;
+      color: #ffffff;
+  }
+  footer .social img{
+      padding-top: 15px;
+      background-color: #f8cb8a;
+  }
+  
+  h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 2rem;
+    font-family: Rubik;
+  }
+  h1,
+  p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #survey-form.input,
+  #survey-form.button,
+  #survey-form.select,
+  #survey-form.textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  #survey-form.button {
+    border: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
+   body {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+  }
+  #logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+  }
+  /* Style the navbar */
+  .topnav {
+    display: flex;
+    justify-content: space-around;
+    font-family: Julius Sans One;
+    position: relative;
+    float: left;
+  z-index: 1;
+  }
+  
+  /* Navbar links */
+  .topnav a {
+    text-align: center;
+    color:#f18aaf;
+    background-color: #fffbf2;
+    text-decoration: none;
+    font-family: Julius Sans One;
+    padding: 35px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .topnav a:hover {
+    background-color: #f8cb8a;
+    color:#fff;
+    font-family: Julius Sans One;
+  }
+  
+  /* Active/current link */
+  .topnav a.active {
+    background-color: #F18AAF;
+    color:#fff;
+    font-family: Julius Sans One;
+  }
+  
+  /* Style the input container */
+  .topnav .login-container {
+  float: right;
+  }
+  
+  /* Style the input field inside the navbar */
+  .topnav input[type=text] {
+  padding: 6px;
+  margin-top: 30px;
+  font-size: 17px;
+  margin-bottom: 8px;
+  border: none;
+  width: 150px;
+  border: 5px solid #F18AAF; /* adjust as needed (as long as it doesn't break the topnav) */
+  }
+  
+  /* Style the button inside the input container */
+  .topnav .login-container button {
+  float: right;
+  padding: 11px;
+  margin-top: 30px;
+  margin-left: 2px;
+  margin-bottom: 8px;
+  background: #f18aaf;
+  color: #FFFBF2;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .topnav .login-container button:hover {
+  background: #f8cb8a;
+  }
+  @media screen and (max-width: 900px) {
+    .topnav .login-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      margin-top: 18px;
+      padding: 14px;
+    }
+    .topnav .login-container button {
+      float: none;
+      display: block;
+      text-align: center;
+      margin-top: 18px;
+      padding: 18px;
+      width: 150px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+  .bottomnav {
+      background-color: #f8cb8a;
+      color:#fff;
+      font-family: Julius Sans One;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1;
+      grid-column: 1/3;
+    }
+    .bottomnav a {
+      color:#ffffff;
+      background-color:#f8cb8a;
+      text-decoration: none;
+      font-family: Rubik;
+  }
+  .bottomnav a:hover {
+      color: #f18aaf;
+      background-color: #e8b56b;
+      font-family: Rubik;
+  }
+  .bottomnav p {
+      font-size: 1.2em;
+      font-family: Rubik;
+  }
+  .bottomnav p a:hover {
+      text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .container {
+      max-width: 540px;}
+    .topnav, .bottomnav{
+      flex-direction: column;
+    }
+    .logo{
+      width: 80px;
+     }
+  }
+  .logo{
+      width: 80px;
+     }
+     #survey-form {
+      background-color: #f18aaf;
+      padding: 2.5rem 0.625rem;
+      border-radius: 0.25rem;
+    }
+      .container-1{
+        max-width: 720px;
+        grid-column: 1;
+      }
+      .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .container-2{
+      grid-column:2;
+      background-color: #E8B56B;
+    margin: 0 auto 1.25rem auto;
+    height: 2300px;
+    }
+  
+    .container-2{
+      grid-column:2;
+      background-color: #E8B56B;
+    margin: 0 auto 1.25rem auto;
+    height: 100%;
+    }
+  
+  .header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+  #survey-form .form-group {
+      margin: 0 auto 1.25rem auto;
+      padding: 0.25rem;
+    }
+    
+    #survey-form .form-control {
+      display: block;
+      width: 100%;
+      height: 2.375rem;
+      padding: 0.375rem 0.75rem;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    
+    #survey-form.form-control:focus {
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    .container-1 form.input-radio,
+    .container-1.input-checkbox {
+      display: inline-block;
+      margin-right: 0.625rem;
+      min-height: 2rem;
+      min-width: 2rem;
+    }
+    
+    .container-1.input-textarea {
+      min-height: 2rem;
+      width: 100%;
+      padding: 0.625rem;
+      resize: vertical;
+    }
+    
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--color-green);
+      color: inherit;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  .clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* form */
+  
+  .container-1  {
+    background-color: #F18AAF;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+  }
+  .container-1 {
+    background-color: #F18AAF;
+  }
+  img.girl {
+      height: 600px;
+      width: 600px;
+      margin: 3rem;
+  }
+  
+  .container-1 .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    padding-top: 0rem;
+  }
+  
+  .container-1 .form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .container-1 .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .container-1 .input-radio,
+  .container-1 .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+  
+  .container-1 .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+  
+  .container-1 .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+  }

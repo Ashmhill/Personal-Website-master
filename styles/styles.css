@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {box-sizing: border-box;}
+
+/* Style the navbar */
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    font-family: Julius Sans One;
+    position: relative;
+    float: left;
+z-index: 1;
+}
+
+/* Navbar links */
+.topnav a {
+    text-align: center;
+    color:#9E004B;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-family: Julius Sans One;
+    padding: 35px;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+    background-color: #6E512B;
+    color:#ffffff;
+    font-family: Julius Sans One;
+}
+
+/* Active/current link */
+.topnav a.active {
+    background-color: #9E004B;
+    color:#ffffff;
+    font-family: Julius Sans One;
+}
+
+/* Style the input container */
+.topnav .login-container {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 30px;
+  font-size: 17px;
+  margin-bottom: 8px;
+  border: none;
+  width: 150px;
+  border: 5px solid #9E004B; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+
+/* Style the button inside the input container */
+.topnav .login-container button {
+  float: right;
+  padding: 11px;
+  margin-top: 30px;
+  margin-left: 2px;
+  margin-bottom: 8px;
+  background: #9E004B;
+  color: #ffffff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background: #6E512B;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 900px) {
+  .topnav .login-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 18px;
+    padding: 14px;
+  }
+  .topnav .login-container button {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    padding: 18px;
+    width: 150px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.bottomnav {
+    background-color: #6E512B;
+    color:#ffffff;
+    font-family: Julius Sans One;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    grid-column: 1/3;
+  }
+  .bottomnav a {
+    color:#ffffff;
+    background-color:#6E512B;
+    text-decoration: none;
+    font-family: Rubik;
+}
+.bottomnav a:hover {
+    color: #9E004B;
+    background-color: #9f6b53;
+    font-family: Rubik;
+}
+.bottomnav p {
+    font-size: 1.2em;
+    font-family: Rubik;
+}
+.bottomnav p a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 80px;
+}
+
+header {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.bottomnav {
+    color: #ffffff;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+  background-color: #9E004B;
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.bottomnav{
+    background-color: #6E512B;
+    color:#ffffff;
+    font-family: Julius Sans One;
+}
+.book,.join {
+    background-color: #6E512B;
+    color:#ffffff;
+    text-decoration: none;
+    font-family: Rubik;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.book:hover, .join:hover {
+    background-color: #6E512B;
+    color: #ffffffff;
+}
+body {
+    background-color: #6E512B;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.msg {
+    background-color: #ffffffff;
+    padding: 35px;
+}
+#background {
+    height: 725px;
+    grid-column: 1/11;
+    grid-row: 4/9;
+    background-color: #9f6b53;
+}
+.mountains {
+    width: 120%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px black;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.home-grid {
+    font-family: Julius Sans One;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+.msg {
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px black;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+.home-title {
+    font-size: 25px;
+    color: #ffffffff;
+}
+}
+div {
+    display: block;
+}
+.home-title {
+    color: #ffffffff;
+    font-family: Julius Sans One;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.button-box {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+.msg {
+    background-color: #ffffffff;
+    padding: 35px;
+}
+main section {
+    text-align: center;
+    color: #9f6b53;
+}
+section {
+    display: block;
+}
+.msg h2 {
+    color: #9E004B;
+    font-family: Julius Sans One;
+}
+.msg p {
+    color: #9E004B;
+    font-family: Rubik;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h2 {
+  margin: 0;
+}
+main section {
+    text-align: center;
+    color: #9f6b53;
+}
+body {
+    background-color: #9E004B;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+section {
+    display: block;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+div {
+    display: block;
+}
+#hero-img {
+    width: 100%;
+    padding: 0px 0px 80px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.bottomnav {
+    background-color: #6E512B;
+    color:#ffffff;
+    font-family: Julius Sans One;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    grid-column: 1/3;
+    position: relative;
+  }
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    .topnav, .bottomnav{
+        flex-direction: column;
+    }
+    .topnav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #ffffffff;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .bottomnav {
+        margin-top: 25px;
+    }
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
